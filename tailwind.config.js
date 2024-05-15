@@ -8,11 +8,20 @@ export default {
     extend: {
       colors: {
         blue: '#3232ac',
-        white: '#f9f9fc',
+        white: '#ffffff',
         orange: '#ffb45f',
         grey: '#f5f5fc',
-        black: '#211f46'
-    }
+        black: '#211f46',
+        green: '#00b8a9',
+    },
+    screens: {
+      xs: "480px",
+      mds: "600px",
+      md: "800px",
+      lgss: "976px",
+      lg: "1200px",
+      xxl: "1440px",
+    },
 },
  fontFamily: {
   'Roboto': ['Roboto', 'sans-serif'],
