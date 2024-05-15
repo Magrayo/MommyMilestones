@@ -1,10 +1,10 @@
 import Navbar from "./Navbar"
-import Solihats from "../images/Solihats.jpg";
+import opsolihat from "../images/opsolihat.jpg";
 const people = [
     {
       name: 'Opaleye Solihat',
       role: 'Team Member',
-      image: Solihats,
+      image: opsolihat,
       bio: "I'm Opaleye Solihat, a driven Software Engineer deeply passionate about crafting captivating frontend experiences. Specializing in React.js, I thrive on blending the realms of science and technology. Armed with proficiency in HTML, CSS & CSS Frameworks, and JavaScript, I'm poised to deliver innovative solutions. Currently exploring fresh opportunities within the dynamic tech landscape.",
       gUrl: 'https://github.com/Olajumoke-1',
       linkedinUrl: 'http://www.linkedin.com/in/solihat-olajumoke31',
@@ -30,7 +30,7 @@ const people = [
               <li key={person.name} className="flex flex-col gap-10 pt-12 sm:flex-row">
                 <img className="aspect-[4/5] w-[279px] flex-none rounded-2xl object-cover" src={person.image} alt="Solihat's Picture" />
                 <div className="max-w-xl flex-auto">
-                  <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900 text-[40px] font-News">{person.name}</h3>
+                  <h3 className="font-semibold leading-8 tracking-tight text-black text-[45px] font-News mb-[8px]">{person.name}</h3>
                   <p className="text-base leading-7 text-gray-600">{person.role}</p>
                   <p className="mt-6 leading-8 text-black font-News text-[18px]">{person.bio}</p>
                   <ul role="list" className="mt-6 flex gap-x-6">

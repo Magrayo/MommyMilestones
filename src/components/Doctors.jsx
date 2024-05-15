@@ -1,48 +1,50 @@
 import React, { useState } from 'react';
-
+import DrM from '../images/DrM.jpg'
+import leslie from '../images/leslie.jpg'
+import DrL from '../images/DrL.jpg'
+import DrP from '../images/DrP.jpg'
+import DrE from '../images/DrE.jpg'
+import DrR from '../images/DrR.jpg'
 const people = [
     {
         name: 'Dr. Patrick Hughes',
         role: 'Neonatologist',
-        imageUrl: 'https://plus.unsplash.com/premium_photo-1661756453437-0dc2df3b3a19?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: DrM,
         xUrl: '#',
         linkedinUrl: '#',
       },
       {
         name: 'Dr. Rachel Thompson',
         role: 'Pediatrician',
-        imageUrl: 'https://images.unsplash.com/photo-1673865641073-4479f93a7776?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: DrE,
         xUrl: '#',
         linkedinUrl: '#',
       },
       {
         name: 'Emily Hernandez',
         role: 'Maternity Nurse',
-        imageUrl: 'https://images.unsplash.com/photo-1666886573681-a8fbe983a3fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image: DrL,
         xUrl: '#',
         linkedinUrl: '#',
       },
   {
     name: 'Emma Dorsey',
     role: 'Lactation Consultant',
-    imageUrl:
-      'https://images.unsplash.com/photo-1622475440551-6c9564685ea9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image:DrR,
     xUrl: '#',
-    linkedinUrl: '#',
+    linkedin: '#',
   },
   {
     name: 'Leslie Alexander',
     role: 'Genetic Counselor',
-    imageUrl:
-      'https://plus.unsplash.com/premium_photo-1661766718556-13c2efac1388?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: leslie,
     xUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Leonard Krasner',
     role: 'Eye Specialist',
-    imageUrl:
-      'https://images.unsplash.com/photo-1666887360676-433fc13f0752?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: DrP,
     xUrl: '#',
     linkedinUrl: '#',
   },
@@ -71,7 +73,7 @@ const Doctors = () => {
       <div className="flex overflow-hidden mt-[120px]">
         {people.slice(startIndex, startIndex + 3).map((person, index) => (
           <div key={index} className="w-[290px] h-64 bg-white rounded-xl shadow-md overflow-hidden m-2 transition-transform hover:scale-105">
-            <img src={person.imageUrl} alt="" className="w-full h-2/3 object-cover"/>
+            <img src={person.image} alt="" className="w-full h-2/3 object-cover"/>
             <p className="text-center py-4">{person.name}</p>
             <p className="text-center">{person.role}</p>
           </div>

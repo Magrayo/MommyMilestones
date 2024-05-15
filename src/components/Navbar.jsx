@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav>
     <div className="container mx-auto flex items-center justify-between h-[80px] bg-blue fixed top-0 left-0 w-full z-50 ">
       <img src={mommy} alt="logo" className="w-[200px] h-[140px] ml-[80px]" />
-      <div className=" md:flex space-x-16 mr-[180px] ">
+      <div className=" md:flex space-x-16 mr-[180px]">
       <a href="/" className="text-white hover:text-gray-300">
           Home
         </a>
