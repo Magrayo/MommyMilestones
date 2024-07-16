@@ -1,28 +1,28 @@
-import React from 'react'
-import mommy from '../images/mommy.png'
+import React from "react";
+import mommy from "../images/mommy.png";
 
 const navigation = {
   Services: [
-    { name: 'Infant Activities', href: '#' },
-    { name: 'High Risk Pregnancy', href: '#' },
-    { name: 'Gynecological Services', href: '#' },
-    { name: 'Prenatal ultrasound', href: '#' },
+    { name: "Prgnancy Tips", href: "#" },
+    { name: "Childbirth Preparation", href: "#" },
+    { name: "Newborn Care Advice", href: "#" },
+    { name: "Parenting Support", href: "#" },
   ],
   Follow: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
+    { name: "Pricing", href: "#" },
+    { name: "Documentation", href: "#" },
+    { name: "Guides", href: "#" },
+    { name: "API Status", href: "#" },
   ],
   Contact: [
-    { name: 'About', href: '#' },
-    { name: 'Blog Page', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: "GitHub", href: "https://github.com/MommyMilestones" },
+    { name: "Email", href: "mommymilestones03@gmail.com" },
+    { name: "Trello", href: "https://trello.com/b/3R3qe8cO/mommy-milestones" },
   ],
   social: [
     {
-      name: 'Facebook',
-      href: '#',
+      name: "Facebook",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -34,8 +34,8 @@ const navigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: '#',
+      name: "Instagram",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -47,8 +47,8 @@ const navigation = {
       ),
     },
     {
-      name: 'X',
-      href: '#',
+      name: "X",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
@@ -56,72 +56,120 @@ const navigation = {
       ),
     },
   ],
-}
+};
 
 const Footer = () => {
-  
   return (
-    <div className="mx-auto max-w-9xl sm:pt-16 lg:px-8 lg:pt-32 bg-black text-white items-center justify-center h-[602px] mt-[5px]">
-    <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-      <div className="space-y-8 ml-[120px]">
-        <span><img className="w-[175px] h-[138px] mr-10"src={mommy}alt="Company name" />
-        <p className="text-[16px] font-Roboto leading-6 text-white mt-[-20px]">
-          Mommy Milestones is here to celebrate every Milestone with you</p> </span>
-        <form className="mb-6">
-          <input type="email" placeholder="Enter Email" className="mr-2 p-3 w-[255px] font-Roboto text-black text-[16px] font-normal leading-[26px]" /> <br /> 
-          <button type="submit" className="p-3 w-[128px] mt-[12px] bg-green text-white font-Roboto text-[15px] leading-[26px] font-light">Subscribe </button>
-        </form>
-      </div>
+    <div className="mx-auto max-w-7xl sm:pt-16 lg:px-8 lg:pt-32 bg-black text-white  items-center justify-center xs:h-auto  mt-5 px-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8">
+        <div className="space-y-8 mx-auto lg:ml-0  ">
+          <span>
+            <img
+              className="w-[175px] h-[138px] lg:mr-10"
+              src={mommy}
+              alt="Company name"
+            />
+            <p className="text-[16px] font-Roboto leading-6 text-white mt-[-20px] text-center lg:text-left">
+              Mommy Milestones is here to celebrate every Milestone with you
+            </p>{" "}
+          </span>
+          <form className="mb-6">
+            <input
+              type="email"
+              placeholder="Enter Email"
+              className="block w-full p-3 font-Roboto text-black text-[16px] font-normal leading-[26px]"
+            />{" "}
+            <br />
+            <button
+              type="submit"
+              className=" block mt-3 p-3 w-full lg:w-[128px] bg-green text-white font-Roboto text-[15px] leading-[26px] font-light"
+            >
+              Subscribe{" "}
+            </button>
+          </form>
+        </div>
 
-      <div className="mt-16 grid grid-cols-2 gap-24 xl:col-span-2 xl:mt-0">
-        <div className="md:grid md:grid-cols-2 md:gap-8">
-          <div className="ml-8">
-            <h3 className="leading-[43px] font-News font-semibold text-[36px] text-white">Services</h3>
+        <div className="lg:ml-20  mt-16 flex flex-col lg:gap-x-10  lg:items-center lg:flex-row xl:mt-0">
+          <div className="flex flex-col mt-10">
+            <h3 className="leading-[43px] mt-5 font-News font-semibold text-[36px] text-white">
+              Services
+            </h3>
             <ul role="list" className="mt-6 space-y-8">
               {navigation.Services.map((item) => (
-                <li key={item.name} className='relative transition-transform duration-300 hover:text-green hover:transform hover:translate-x-[1rem]'>
-                  <a href={item.href} className="text-sm leading-6 text-white  hover:text-green">
+                <li
+                  key={item.name}
+                  className="relative transition-transform duration-300 hover:text-green hover:transform hover:translate-x-[1rem]"
+                >
+                  <a
+                    href={item.href}
+                    className="text-sm leading-6 text-white  hover:text-green"
+                  >
                     {item.name}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="mt-10 md:mt-0 ml-10">
-            <h3 className="text-[36px] font-semibold leading-[43px] text-white">Follow Us</h3>
-            <ul role="list" className="mt-6 space-y-8 ml-[15px] ">
+          <div className="flex flex-col mt-10 lg:pl-20 gap-4">
+            {/* className="mt-10 md:mt-0 ml-10 w-full lg:w-[200px] " */}
+            <h3 className="mt-6  text-nowrap leading-[43px] text-[36px] font-semibold  text-white">
+              Follow Us
+            </h3>
+            <ul
+              role="list"
+              className="mt-3 space-y-9 flex flex-col justify-center lg:w-[100px] "
+            >
               {navigation.social.map((item) => (
-                <li key={item.name} className='border p-2 relative transition-transform duration-300 hover:text-green hover:transform hover:translate-x-[1rem]'>
-                <a key={item.name} href={item.href} className="text-white hover:text-green ">
-                   <span className="sr-only">{item.name}</span>
-                   <item.icon className="h-8 w-8" aria-hidden="true" />
-               </a>
+                <li
+                  key={item.name}
+                  className="border p-2 relative transition-transform duration-300 hover:text-green hover:transform hover:translate-x-[1rem]"
+                >
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-white hover:text-green "
+                  >
+                    <span className="sr-only">{item.name}</span>
+
+                    <item.icon className="h-10 w-10" aria-hidden="true" />
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
-        </div>
-        <div className="md:grid md:grid-cols-2 md:gap-8 ml-14">
-          <div>
-            <h3 className="text-[36px] font-News font-semibold leading-[43px] text-white">Contact</h3>
-            <ul role="list" className="mt-6 space-y-8">
+
+          {/* <div className=" w-full pr-14  md:grid md:grid-cols-2 md:gap-8 ml-14"> */}
+          <div className="flex flex-col lg:mt-[-45px] lg:pl-20 gap-4">
+            <h3 className=" mt-5 text-[36px] font-News font-semibold leading-[43px] text-white">
+              Contact
+            </h3>
+            <ul role="list" className="mt-3 space-y-8">
               {navigation.Contact.map((item) => (
-                <li key={item.name} className='relative transition-transform duration-300 hover:text-green hover:transform hover:translate-x-[1rem]'>
-                  <a href={item.href} className="text-sm leading-6 text-white hover:text-green">
+                <li
+                  key={item.name}
+                  className="relative transition-transform duration-300 hover:text-green hover:transform hover:translate-x-[1rem]"
+                >
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm leading-6 text-white hover:text-green"
+                  >
                     {item.name}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
+          {/* </div> */}
         </div>
       </div>
+      <div className="mt-16 border-t  border-gray-900/10 pt-8 xl:mt-20 lg:mt-24 text-center ">
+        <p className="lg:text-[15px]  text-center leading-[26px] font-Roboto font-normal text-white ">
+          &copy; 2024 Mom's Miles Blog, Inc. All rights reserved.
+        </p>
+      </div>
     </div>
-    <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 ml-[559px]">
-      <p className="text-[15px] leading-[26px] font-Roboto font-normal text-white ">&copy; 2024 Mom's Miles Blog, Inc. All rights reserved.</p>
-    </div>
-  </div>
-
-)
-}
-export default Footer
+  );
+};
+export default Footer;
