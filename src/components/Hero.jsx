@@ -7,7 +7,7 @@ const Hero = () => {
   const tags = [
     {
       id: 1,
-      name: "Prenancy",
+      name: "Pregnancy",
     },
     {
       id: 2,

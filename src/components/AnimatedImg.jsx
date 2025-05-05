@@ -25,4 +25,9 @@ const AnimatedImg = () => {
   );
 };
 
+
+
+
+
 export default AnimatedImg;
+

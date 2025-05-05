@@ -244,3 +244,168 @@ const About = () => {
   );
 };
 export default About;
+
+// pages/404.js
+// import Head from "next/head";
+// import Fade from "react-reveal/Fade";
+
+// export default function Custom404() {
+//   return (
+//     <>
+      {/* <Head>
+        <title>Zinger | Page Not Found</title>
+      </Head>
+
+      <div className="heightFix flex items-center justify-center text-center ">
+        <div className="max-w-screen-xl mx-auto flex-col items-center justify-center">
+          <div className="sm:mb-10 mb-6 overflow-hidden">
+            <Fade bottom>
+              <h1 className="font-extrabold sm:text-9xl text-8xl text-primary-light">
+                404
+              </h1>
+              <p className="sm:mt-6 mt-4 uppercase font-medium sm:text-2xl text-xl">
+                Page Not Found
+              </p>
+            </Fade>
+          </div>
+          <button className="button py-2 px-10 lg:text-lg text-base">
+            HomePage
+          </button>
+        </div>
+      </div> */}
+      {/* <div
+        className=" w-full  h-screen bg-contain  mb-10 bg-center  "
+        style={{ backgroundImage: "url(/img/signin_bg.png)" }}
+      >
+        <div className="max-w-2xl h-auto py-10 bg-primary-white rounded-xl mt-10 mx-auto">
+          <h1 className="text-primary-light text-center font-baloo font-bold text-4xl pb-5">
+            Sign Up
+          </h1>
+          <div className="flex flex-col items-center gap-5 py-8">
+            <input
+              className="border-primary-gray h-[50px] w-[500px] pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl"
+              placeholder="Sobowalmotunrayo07@gmail.com"
+            />
+            <div className="flex gap-5">
+              <input
+                className="h-[50px] w-[240px] border-primary-gray pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl  "
+                placeholder="First Name"
+              />
+              <input
+                className="h-[50px] w-[240px] border-primary-gray pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl "
+                placeholder="Last Name"
+              />
+            </div>
+            <div className="flex gap-5">
+              <input
+                className="h-[50px] w-[180px] border-primary-gray pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl  "
+                placeholder="Sex"
+              />
+              <input
+                className="h-[50px] w-[300px] border-primary-gray pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl "
+                placeholder="DD/MM/YY"
+              />
+            </div>
+            <input
+              className="border-primary-gray h-[50px] w-[500px] pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl"
+              placeholder="Address"
+            />
+          </div>
+          <div className="flex gap-4 ml-24">
+            <input type="checkbox" className="checked:bg-primary-green " />
+            <span>Terms and Conditions</span>
+          </div>
+          <div className="w-[200px] h-[50px] bg-primary-light rounded-3xl text-center py-3 text-primary-white mt-10 mx-auto text-xl font-extrabold font-Poppins">
+            Sign Up
+          </div>
+        </div>
+      </div> */}
+
+
+
+            {/* <div
+        className=" w-full  h-screen bg-contain  mb-10 bg-center  "
+        style={{ backgroundImage: "url(/img/signin_bg.png)" }}
+      >
+        <div className="max-w-2xl h-auto py-10 mb-10 bg-primary-white rounded-xl mt-10 mx-auto">
+          <h1 className="text-primary-light text-center font-baloo font-bold text-4xl pb-5">
+            User Info.
+          </h1>
+          <div className="flex flex-col items-center gap-5 pt-8 pb-2">
+            <input
+              className="border-primary-gray h-[40px] w-[500px] pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl"
+              placeholder="Username"
+            />
+         
+            <input
+              className="border-primary-gray h-[40px] w-[500px] pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl"
+              placeholder="Phone number"
+            />
+          
+            <input
+              className="border-primary-gray h-[40px] w-[500px] pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl"
+              placeholder="Password"
+            />
+          
+           
+            
+            <input
+              className="border-primary-gray h-[40px] w-[500px] pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl"
+              placeholder="Confirm Password"
+            />
+          </div >
+         <div>
+           <div className="flex gap-4 ml-24">
+            <input type="Radio" className="checked:bg-primary-green " />
+            <span  className="font-Poppins text-base  text-primary-grey">At least 1 uppercase character</span>
+          </div>
+          <div className="flex gap-4 ml-24">
+            <input type="Radio" className="checked:bg-primary-green " />
+            <span  className="font-Poppins text-base text-primary-grey">At least 1 lowercase character</span>
+          </div>
+          <div className="flex gap-4 ml-24">
+            <input type="Radio" className="checked:bg-primary-green " />
+            <span  className="font-Poppins text-base  text-primary-grey">At least 1 numeric digit</span>
+          </div>
+          <div className="flex gap-4 ml-24">
+            <input type="Radio" className="checked:bg-primary-green " />
+            <span className="font-Poppins text-base  text-primary-grey">Minimum of 8 characters in length</span>
+          </div></div>
+          <div className="w-[200px] h-[50px] bg-primary-light rounded-3xl text-center py-3 text-primary-white mt-10 mx-auto text-xl font-extrabold font-Poppins">
+            Submit
+          </div>
+        
+      </div>
+      </div> */}
+      
+
+{/* <div
+        className=" w-full  h-screen bg-contain  mb-10 bg-center  "
+        style={{ backgroundImage: "url(/img/signin_bg.png)" }}
+      >
+        <div className="max-w-2xl h-[600px] py-10 mb-10 bg-primary-white rounded-xl mt-10 mx-auto">
+          <h1 className="text-primary-yellow text-center font-baloo font-bold text-4xl pb-5">
+            Sign In
+          </h1>
+          <div className="flex flex-col items-center gap-5 pt-20 pb-2">
+          <input
+              className="border-primary-gray h-[50px] w-[500px] pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl"
+              placeholder="Sobowalmotunrayo07@gmail.com"
+            />
+            <input
+              className="border-primary-gray h-[50px] w-[500px] pl-5 placeholder-shown:text-primary-grey border-2 rounded-3xl"
+              placeholder="Password"
+            />
+            </div>
+            <div className="flex flex-col items-center gap-4 pt-10 text-primary-grey text-sm">
+             <p>Dont have an account yet?<span className="text-primary-light">Sign Up</span></p>
+             <p>Forgot Password</p>
+            </div>
+            <div className="w-[200px] h-[50px] bg-primary-yellow rounded-3xl text-center py-3 text-primary-white mt-10 mx-auto text-xl font-extrabold font-Poppins">
+            Submit
+          </div>
+          </div>
+          </div>
+    </>
+  );
+} */}
